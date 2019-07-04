@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+  <title>Eduarda Gama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet"type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+  <link href="https://cdn.rawgit.com/eduardaggama/layout/cabc694c/style1.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.rawgit.com/eduardaggama/layouts/24ad8745/style.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/eduardaggama/layouts/24ad8745/jquery.js"></script>
+  <script src="https://cdn.rawgit.com/eduardaggama/layouts/24ad8745/bootstrap.js"></script>
+  <script src="https://cdn.rawgit.com/eduardaggama/layouts/24ad8745/parallax.js"></script>
+  
+<style>
+  .modal-dialog{width: 100%;
+}
+    .modal-body {
+    max-height: 80%;
+    overflow-y: auto;
+
+}
+.view{width: 400px;}
+
+body{overflow-x: hidden;}
+/* carousel */
+.foto{height: 200px;
+margin-top:50px;}
+
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 800px){
+  .foto{
+    width: 100%;
+  display:block;}
+}
+</style>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- INÍCIO DA HEADER -->
+<!-- INÍCIO DO MENU -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+     
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <a class="navbar-brand" href="#myPage"> <span class="glyphicon">&#xe260;</span></a>
+      <ul class="nav navbar-nav">
+        <li style=width:220px;><a href="#about">SOBRE</a></li>
+        <li style=width:220px;><a href="#services">HABILIDADES</a></li>
+        <li style=width:220px;><a href="#experiencias">EXPERIÊNCIAS</a></li>
+        <li style=width:220px;><a href="#premios">PRÊMIOS</a></li>
+        <li style=width:220px;><a href="#contact">CONTATO</a></li>
+      </ul>
+    
+  </div>
+</nav>
+<!-- FIM DO MENU -->
+
+<div class="jumbotron text-center">
+  <h1></h1> 
+  <p class="princ"></p>
+  <form>
+    
+    </div>
+
+</div></div>
+<!-- FIM DA HEADER -->
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>A GAROTA QUE QUER ENSINAR TUDO QUE SABE A TODO MUNDO QUE CONHECE</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br>
+    <div class="dev-icons1">
+      <div class="roxo1">
+        <a href="http://www.fb.com/eduardaggama" target="_blank">
+           <i class="fab fa-facebook-square slideanim"></i>
+        </a>
+      </div>
+     <div class="roxo1">
+        <a href="http://www.instagram.com/eduardaggama" target="_blank">
+       <i class="fab fa-instagram slideanim"></i></a>
+      </div>
+     <div class="roxo1">
+        <a href="http://www.linkedin.com/eduardaggama" target="_blank">
+       <i class="fab fa-linkedin-in slideanim"></i></a>
+      </div>
+     <div class="roxo1"><a href="http://www.github.com/eduardaggama" target="_blank">
+       <i class="fab fa-github slideanim"></i></a>
+      </div>
+     <div class="roxo1">
+        <a href="http://www.spotify.com/eduardaggama" target="_blank">
+        <i class="fab fa-spotify slideanim"></i></a>
+      </div>
+     <div class="roxo1">
+        <a href="http://www.youtube.com/eduardagamaa" target="_blank">
+       <i class="fab fa-youtube slideanim"></i></a>
+      </div>
+      
+
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> 
+        Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="container-fluid text-center">
+  <h2>HABILIDADES</h2>
+  <h4>What we offer</h4>
+  <br><div class="dev-icons">
+  <i class="fab fa-html5 slideanim" title="HTML5"></i>
+<i class="fab fa-css3-alt dev-icons slideanim" title="CSS3"></i>
+<i class="fab fa-js-square slideanim" title="JavaScript"></i>
+<i class="fab fa-sass slideanim" title="Sass"></i>
+<i class="fab fa-python slideanim" title="Python"></i>
+<i class="fab fa-node slideanim" title="Node.js"></i>
+
+
+
+
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div id="experiencias" class="container-fluid text-center bg-grey">
+  <h2>EXPERIÊNCIAS</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+          <div class="hvrbox">
+        <img src="workshop1.png" class="hvrbox-layer_bottom" width="400">
+        <div class="hvrbox-layer_top">
+            <div class="hvrbox-text">Ministrei meu primeiro workshop de Chatbots com Watson Assistant na FATEC Sorocaba. Em 4 horas, eu e meus 25 alunos criamos o fluxo de conversação, usamos o Node-RED como orquestrador e associamos o Bot com uma página no Facebook.
+      </div></div>
+    </div></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="hvrbox">
+          <img src="workshop2.png" class="hvrbox-layer_bottom" width="400">
+          <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">
+                Durante a Campus Party Brasil 11, ministrei um workshop de Chatbots, utilizando a ferramenta Watson Assistant.</div></div>
+              </div>
+            </div>
+          </div>
+ 
+
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="hvrbox">
+          <img src="mentoria.png" class="hvrbox-layer_bottom" width="400">
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">
+                Fui mentora na segunda edição do HackInSampa que é organizado pela Shawee. Tive a oportunidade de auxiliar os participantes em quesitos como Watson Assistant, HTML5, CSS3, UX e UI.
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="premios" class="container-fluid text-center bg-grey">
+    <h2>PRÊMIOS</h2><br>
+    
+      <i class="fas fa-trophy"></i>
+      1<sup>o</sup> lugar - Bluehack Hortolândia 2017</span>
+  
+
+
+    </div><br>
+
+  
+    <h2 class="carrosel">Portfolio</h2>
+  
+      <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner">
+                <div class="item active">
+ 
+                  <div class="col-xs-4"><a href="#1"><img src="pai.png" class="foto"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="eu.png" class="foto"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="pai.png" class="foto"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-xs-4"><a href="#1"><img src="eu.png" class="foto"></a></div>
+                  </div>
+              <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+    </div>
+  </div>
+  
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTATO</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p text align="left">Entre em contato comigo! Responderei o mais rápido que puder :)</p>
+      <p text align="left"><span class="glyphicon glyphicon-map-marker"></span> São Paulo, SP</p>
+      <p text align="left"><span class="glyphicon glyphicon-phone"></span> +55 11 994978838</p>
+      <p text align="left"><span class="glyphicon glyphicon-envelope"></span> contatoggama@hotmail.com</p>
+    </div>
+    
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Mensagem" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+
+/*tooltip */
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
+//carousel
+
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+
+</script>
+
+
+</body>
+</html>
